@@ -1,0 +1,23 @@
+{
+  "name": "desktop-cleaner",
+  "version": "0.0.0",
+  "description": "Small app to remove unwanted files from desktop",
+  "main": "desktop-cleaner.js",
+  "dependencies": {
+    "node-windows": "^0.1.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ecorkevin/desktop-cleaner.git"
+  },
+  "author": "Kevin Moritz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ecorkevin/desktop-cleaner/issues"
+  },
+  "homepage": "https://github.com/ecorkevin/desktop-cleaner"
+}
