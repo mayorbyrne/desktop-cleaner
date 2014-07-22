@@ -14,14 +14,15 @@ var desktopPath = 'C:\\Users\\Kevin\\Desktop';
 var cleanInterval = 86400000; //milliseconds
 
 var exec = require('child_process').exec;
-var command = 'rm *' + unwantedExtensions.join(' *');
 
+// need to use 'del' command because 'rm' will not be recognized by windows
+var command = 'del *' + unwantedExtensions.join(' *');
 //-------------------------------------------------
 
 var cleanDesktop = setInterval(function () {
   exec(command, {
     cwd: desktopPath
   }, function (err, stdout, stderr) {
-
+    console.log(err);
   });
 }, cleanInterval);
